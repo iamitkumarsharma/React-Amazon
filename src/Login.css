@@ -1,0 +1,82 @@
+body{
+    background-color: white;
+}
+.login_container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    height: max-content;
+    width: 350px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    
+    
+}
+.login img{
+    display: flex;
+    margin: 0px auto;
+    padding-top: 10px;
+    margin-bottom: -50px;
+    height: 100px;
+    
+}
+
+.login_container h1{
+    font-weight: 400;
+    font-family: sa;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_container input{
+    margin: 10px 2px;
+    border-style: inset;
+    height: 20px;
+    
+}
+
+
+.login_btn{
+    width: 98%;
+    height: 25px;
+    margin: 10px auto;
+    border: none;
+    font-weight: 600;
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.2);
+    background-color: springgreen;
+    outline: none;
+}
+
+.login_container button:hover{
+    background-color: limegreen;
+    transition:all 0.1s ease-out ;
+    box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.8);
+}
+
+.login_container label{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.login_container p{
+    font-size: 10px;
+    margin: 0px auto;
+}
+
+.create_btn{
+    font-weight: 600;
+    margin: 10px 20px;
+    height: 25px;
+    outline: none;
+    border: 1px solid black;
+
+}

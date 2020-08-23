@@ -1,0 +1,23 @@
+body {
+  background-color: lightcyan;
+}
+.checkout_left {
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+}
+
+.checkout_title {
+  display: flex;
+  text-transform: capitalize;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.checkout_message {
+  padding-left: 50px;
+}
+
+.container {
+  display: flex;
+}
