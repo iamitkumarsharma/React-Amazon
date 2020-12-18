@@ -1,0 +1,16 @@
+.slider {
+  position: relative;
+  z-index: -1;
+  height: 500px;
+  margin-bottom: -180px;
+}
+
+@media (max-device-width: 480px) {
+  .slider {
+    height: max-content;
+    margin-bottom: 0px;
+  }
+}
+.slider_image {
+  height: 500px;
+}

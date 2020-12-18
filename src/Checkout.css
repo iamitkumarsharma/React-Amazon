@@ -1,0 +1,37 @@
+.checkout_left {
+  width: fit-content;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+}
+.checkout_right {
+  margin-left: auto;
+  width: 300px;
+  height: 100vh;
+  font-size: large;
+  background-color: whitesmoke;
+}
+.checkout_title {
+  display: flex;
+  text-transform: capitalize;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.checkout_message {
+  padding-left: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+@media (max-device-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .checkout_right {
+    height: max-content;
+    width: 100%;
+  }
+}

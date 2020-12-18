@@ -1,0 +1,19 @@
+.home {
+  width: 100%;
+}
+.home_row_one,
+.home_row_books,
+.home_row_cloths {
+  z-index: 1;
+  display: flex;
+  margin: 5px 5px;
+  overflow-x: auto;
+}
+
+@media (max-device-width: 480px) {
+  .home_row_one,
+  .home_row_books,
+  .home_row_cloths {
+    flex-direction: column;
+  }
+}

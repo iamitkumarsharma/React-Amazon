@@ -1,0 +1,26 @@
+.order {
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 20px;
+  margin-bottom: 10px;
+  height: max-content;
+  width: 90%;
+  background-color: white;
+  border: 1px solid rgb(211, 213, 214);
+  border-radius: 5px;
+}
+
+.order_item {
+  padding: 20px;
+
+  height: fit-content;
+  padding: 2px;
+}
+
+.order_price {
+  margin-left: 50%;
+  display: flex;
+  position: relative;
+  left: 10px;
+  background-color: wheat;
+}
