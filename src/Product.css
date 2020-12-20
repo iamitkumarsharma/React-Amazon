@@ -1,8 +1,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  min-width: 150px;
+  max-width: 300px;
   height: 400px;
   max-height: 500px;
   padding: 20px;
@@ -26,7 +25,7 @@
   object-fit: contain;
 }
 
-.product button {
+/*.product button {
   width: 40%;
   height: 20px;
   margin: 0px auto;
@@ -40,10 +39,14 @@
   font-weight: 600;
   font-size: 12px;
   overflow: hidden;
+}*/
+.MuiButton-containedPrimary {
+  background: linear-gradient(45deg, #af9a6c 20%, #8ca035 70%);
+  width: 50%;
+  margin: 0px auto !important;
+  border-radius: 0px !important;
 }
-.product button:hover {
-  transform: scale(1.06);
-}
+
 .product:hover {
   transform: scale(1.02);
 }

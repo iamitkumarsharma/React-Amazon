@@ -1,16 +1,21 @@
 .slider {
   position: relative;
   z-index: -1;
-  height: 500px;
-  margin-bottom: -180px;
+  margin: 0px;
+}
+.thumbs-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-device-width: 480px) {
-  .slider {
-    height: max-content;
-    margin-bottom: 0px;
+  .slider_image {
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
-}
-.slider_image {
-  height: 500px;
+  .thumbs-wrapper {
+    display: none;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import Button from "@material-ui/core/Button";
 
 function Product({ id, title, image, price, rating }) {
   //es6 destructuring
@@ -36,7 +37,10 @@ function Product({ id, title, image, price, rating }) {
       </div>
 
       <img src={image} alt=""></img>
-      <button onClick={addtobasket}>Add to Cart</button>
+
+      <Button onClick={addtobasket} variant="contained" color="primary">
+        Add to cart
+      </Button>
     </div>
   );
 }

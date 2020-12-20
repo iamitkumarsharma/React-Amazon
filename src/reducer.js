@@ -1,6 +1,7 @@
 export const initialState = {
   basket: [],
   user: null,
+  search: [],
 };
 
 export const getBasketTotal = (basket) =>
@@ -8,13 +9,18 @@ export const getBasketTotal = (basket) =>
 
 export default function reducer(state, action) {
   switch (action.type) {
+    case "SET_SEARCH":
+      return { ...state, search: action.payload };
+
     case "SET_USER":
       return {
         ...state,
         user: action.user,
       };
+
     case "ADD_TO_BASKET":
       return { ...state, basket: [...state.basket, action.item] };
+
     case "EMPTY_BASKET":
       return { ...state, basket: [] };
     case "REMOVE_FROM_BASKET":

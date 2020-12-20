@@ -23,7 +23,7 @@ function MyOrder() {
   }, [user]);
   console.log("order", orders);
   return (
-    <div style={{ backgroundColor: "#FEF9E7", height: "100vh", color: "#111" }}>
+    <div>
       <h1>Your Orders</h1>
       <div>
         {orders?.map((order) => (

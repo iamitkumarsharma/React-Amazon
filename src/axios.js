@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5001/clone-3eed1/us-central1/api",
+  /* baseURL: "http://localhost:5000"*/
+  baseURL: "https://amazon-react-app.herokuapp.com/",
 });
 
 export default instance;

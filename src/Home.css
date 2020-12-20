@@ -1,13 +1,19 @@
 .home {
   width: 100%;
 }
+
+.home_category > strong {
+  background-color: khaki;
+  padding: 5px;
+}
 .home_row_one,
 .home_row_books,
 .home_row_cloths {
   z-index: 1;
+  padding: 5px;
+  margin: 5px auto;
   display: flex;
-  margin: 5px 5px;
-  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 @media (max-device-width: 480px) {

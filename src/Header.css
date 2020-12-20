@@ -73,14 +73,28 @@
   color: yellowgreen;
 }
 
+.header_burger {
+  color: white;
+  display: none !important;
+}
+.MuiList-padding,
+.MuiListItem-gutters {
+  padding: 0px !important;
+}
+.MuiListItem-root {
+  padding-left: 5px !important;
+}
+
+.MuiPaper-root {
+  opacity: 0.95;
+}
 @media (max-device-width: 480px) {
   .header {
     object-fit: contain;
     flex-direction: column;
     width: 100%;
-
     align-items: center;
-    height: max-content;
+    height: 120px;
   }
   .header_search {
     display: flex;
@@ -89,5 +103,29 @@
     align-items: center;
     width: 90%;
     flex-direction: row;
+  }
+
+  .header_burger {
+    display: flex !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+  }
+  .header_menu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .header_cart,
+  .header_option {
+    display: none;
+  }
+  .header_cart_res {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
   }
 }

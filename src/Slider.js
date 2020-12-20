@@ -2,15 +2,18 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "./Slider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 function Slider() {
   return (
     <div className="slider">
       <div className="slider_image">
         <Carousel
-          transitionTime={1000}
-          showThumbs={false}
+          transitionTime={1500}
+          showThumbs={true}
           autoPlay={true}
-          showArrows={true}
+          showStatus={false}
+          showArrows={false}
+          swipeable={true}
           infiniteLoop={true}
         >
           <div>

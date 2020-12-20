@@ -9,6 +9,7 @@ import { getBasketTotal } from "./reducer";
 import CurrencyFormat from "react-currency-format";
 import { db } from "./Firebase";
 import ShoppingCartSharpIcon from "@material-ui/icons/ShoppingCartSharp";
+
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
 
@@ -25,7 +26,10 @@ function Payment() {
   useEffect(() => {
     const getClientReq = async () => {
       const response = await axios.post(
-        `http://localhost:5001/clone-3eed1/us-central1/api/payments/create?total=${
+        /* `http://localhost:5000/payments/create?total=${
+          getBasketTotal(basket) * 100
+        }`*/
+        `https://amazon-react-app.herokuapp.com/payments/create?total=${
           getBasketTotal(basket) * 100
         }`
       );

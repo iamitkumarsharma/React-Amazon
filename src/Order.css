@@ -4,7 +4,6 @@
   padding: 20px;
   margin-bottom: 10px;
   height: max-content;
-  width: 90%;
   background-color: white;
   border: 1px solid rgb(211, 213, 214);
   border-radius: 5px;
@@ -23,4 +22,16 @@
   position: relative;
   left: 10px;
   background-color: wheat;
+}
+
+@media (max-device-width: 480px) {
+  .order {
+    width: 400px;
+    display: grid;
+    place-content: center;
+    margin: 2px;
+    padding: 7px;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
